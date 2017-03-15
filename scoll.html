@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<style>
+			body,
+			html,
+			main {
+				/* important */
+				height: 100%;
+			}
+			
+			.cd-fixed-bg {
+				min-height: 100%;
+				background-size: cover;
+				background-attachment: fixed;
+				background-repeat: no-repeat;
+				background-position: center center;
+			}
+			
+			.cd-fixed-bg.cd-bg-1 {
+				background-image: url("images/1.jpg");
+			}
+			
+			.cd-fixed-bg.cd-bg-2 {
+				background-image: url("images/2.jpg");
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			
+			.cd-fixed-bg.cd-bg-3 {
+				background-image: url(".images/3.jpg");
+			}
+			
+			.cd-fixed-bg.cd-bg-4 {
+				background-image: url("images/4.jpg");
+			}
+			
+			.cd-scrolling-bg {
+				min-height: 100%;
+			}
+			.box{
+				width: 300px;
+				height: 300px;
+				background: rgba(122,125,36,.5);
+				margin: 300px;
+			}
+			.cd-color-1{
+				background: rgba(208,35,35,.3);
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<main>
+			<div class="cd-fixed-bg cd-bg-1">
+				<h1>标题</h1>
+			</div>
+
+			<div class="cd-scrolling-bg cd-color-1">
+				<div class="cd-container">
+					<p>hello</p>
+				</div>
+			</div>
+
+			<div class="cd-fixed-bg cd-bg-2">
+				<div class="box">
+					<p>hello</p>
+				</div>
+			</div>
+
+			<div class="cd-scrolling-bg cd-color-2">
+				<div class="cd-container">
+					<p>
+						内容...
+					</p>
+				</div>
+			</div>
+		</main>
+
+		<script src="jq/jquery-3.1.0.js"></script>
+	</body>
+
+</html>
+
